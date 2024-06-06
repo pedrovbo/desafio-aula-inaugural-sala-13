@@ -1,49 +1,52 @@
-@import
-url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-*{ margin: 0; padding: 0; box-sizing: border-box; font-family: Archivo; }
-header{ padding-top: 184px; padding-bottom: 19px; background-color: #000; }
-header {padding-bottom: 64px; color: white; } header > div, main > form{ margin:
-0 auto; width: 736px; } h1{ margin-bottom: 11px; font-size: 36px; font-weight:
-700; line-height: 42px; text-align: left; } p{ margin-bottom: 11px; font-family:
-Poppins; font-size: 16px; font-weight: 700; line-height: 26px; text-align: left;
-} form{ margin-top: -64px !important; padding: 64px; background-color: #FAFAFC;
-} legend{ padding-bottom: 16px; border-bottom: 1px solid #E6E6F0; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+</head>
+<body>
+    <header>
+        <div>
+            <h1>POSTECH - FULLSTACK</h1>
+            <p>Desafio aula inaugural</p>
+    
+        </div>
+    </header>
+    <main>
+        <form id="contactForm">
+            <legend>Informações do Grupo</legend>
+            <div class="form-group">
+                <label for="name1">Nome</label>
+                <input type="text" id="name1" name="name1" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="name2">Nome</label>
+                <input type="text" id="name2" name="name2" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="name3">Nome</label>
+                <input type="text" id="name3" name="name3" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="name4">Nome</label>
+                <input type="text" id="name4" name="name4" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="name5">Nome</label>
+                <input type="text" id="name5" name="name5" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="message">História do Grupo</label>
+                <textarea id="message" name="message" placeholder="" required></textarea>
+            </div>
+            <div class="form-group btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
 
-<header>
-  <div>
-    <h1>POSTECH - FULLSTACK</h1>
-    <p>Desafio aula inaugural</p>
-  </div>
-</header>
-<main>
-  <form id="contactForm">
-    <legend>Informações do Grupo</legend>
-    <div class="form-group">
-      <label for="name1">Nome</label>
-      <input type="text" id="name1" name="name1" placeholder="" required />
-    </div>
-    <div class="form-group">
-      <label for="name2">Nome</label>
-      <input type="text" id="name2" name="name2" placeholder="" required />
-    </div>
-    <div class="form-group">
-      <label for="name3">Nome</label>
-      <input type="text" id="name3" name="name3" placeholder="" required />
-    </div>
-    <div class="form-group">
-      <label for="name4">Nome</label>
-      <input type="text" id="name4" name="name4" placeholder="" required />
-    </div>
-    <div class="form-group">
-      <label for="name5">Nome</label>
-      <input type="text" id="name5" name="name5" placeholder="" required />
-    </div>
-    <div class="form-group">
-      <label for="message">História do Grupo</label>
-      <textarea id="message" name="message" placeholder="" required></textarea>
-    </div>
-    <div class="form-group btn">
-      <button type="submit">Submit</button>
-    </div>
-  </form>
-</main>
+    <script src="script.js"></script>
+</body>
+</html>
